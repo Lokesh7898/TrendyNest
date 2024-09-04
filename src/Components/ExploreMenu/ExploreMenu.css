@@ -1,0 +1,136 @@
+.explore-menu{
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin-top: 100px;
+    animation: fadeIn 3s;
+}
+
+.explore-menu h1{
+    text-align: center;
+    color: #084078;
+    font-size: 70px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: "Playwrite DE Grund", cursive; */
+}
+
+.explore-menu-text{
+    /* font-family: "Playwrite DE Grund", cursive; */
+    text-align: center;
+    color: #1c60a3;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin: 2% 2%;
+}
+
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    text-align: center;
+    margin: 40px 0px;
+    overflow-x: scroll;
+}
+
+.explore-menu-list-item:hover{
+    transform: scale(1.02);
+}
+
+.explore-menu-list::-webkit-scrollbar{
+    display: none;
+}
+
+.explore-menu-list-item{
+    /* width: 7.5vw; */
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.explore-menu-list-item p{
+    margin-top: 10px;
+    color: rgb(135, 134, 134);
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.explore-menu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #0c0909;
+    border: none;
+}
+
+.explore-menu-list-item .active{
+    border: 4px solid #b1570e;
+    padding: 2px;
+}
+
+.Item-selection{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    /* border: 1px solid black; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.503); 
+    padding: 1%;
+    object-fit: contain;
+}
+
+.Item-selection:hover{
+    box-shadow: 0px 4px 6px #084078; 
+}
+
+.explore-menu-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.explore-icon{
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.149);
+    cursor: pointer;
+}
+
+
+@media (min-width: 270px) and (max-width: 480px) {
+
+    .explore-menu h1 {
+        font-size: 1.5em;
+    }
+
+    .explore-menu-text {
+        font-size: 0.9em;
+    }
+
+    .explore-icon {
+        font-size: 1.5em;
+    }
+
+    .explore-menu-list {
+        width: 100%;
+    }
+
+    .Item-selection {
+        width: 80px;
+        height: 80px;
+    }
+
+    .explore-menu-list-item {
+        margin: 0 5px;
+    }
+
+    .explore-menu-list-item p{
+        font-size: 12px;
+    }
+
+}

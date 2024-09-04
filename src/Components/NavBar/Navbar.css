@@ -1,0 +1,93 @@
+.navbar-custom {
+    width: 90%;
+    height: 11vh;
+    margin: 10px auto;
+    /* background-color: #000000; */
+    /* background: linear-gradient(to right, #ff770060, #fe4c00a8 );  */
+    /* background: linear-gradient(to right, #eeb095, #f94c02); Solid gradient colors */
+    background: linear-gradient(to right, #141313, #004285);
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+    animation: fadeIn 2s;
+}
+
+.nav-logo{
+    height: 220%;
+    width: 200%;
+    margin-left: 5%;
+    background: rgb(0, 0, 0);
+    border-radius: 100%;
+}
+
+.nav-login{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .form-control,
+.navbar-custom .btn {
+    color: white;
+    font-weight: 550;
+    font-size: 17px;
+    height: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .btn:hover
+ {
+    color: rgb(107, 210, 250);
+}
+
+.nav-login img:hover,
+.nav-signup img:hover  {
+    transform: scale(1.1);
+    color: rgb(107, 210, 250);
+  }
+
+.navbar-custom .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid green;
+    border-right: 1px solid green;
+}
+
+.navbar-custom .form-control::placeholder {
+    color: white;
+    text-align: start;
+}
+
+
+@media (min-width: 270px) and (max-width: 480px) {
+
+  /* .navbar-toggler, .nav-login{
+    display: none;
+  } */
+
+  .nav-logo{
+    height: 170%;
+  }
+
+  .navbar-toggler span{
+    color: #fff;
+
+   }
+
+}
+
+@media (min-width: 481px) and (max-width: 832px) {
+
+  .navbar-toggler span{
+   color: #fff;
+  }
+  
+}

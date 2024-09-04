@@ -1,0 +1,118 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    
+  }
+  
+  .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-header {
+    margin-bottom: 10px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 650;
+  }
+
+  .updates {
+    font-size: 20px;
+    margin: 3%;
+  }
+  
+  .payment-summary {
+    margin-bottom: 20px;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .summary-item.total {
+    font-weight: bold;
+  }
+  
+  .track-order-button {
+    background: #084078;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 8%;
+    text-align: center;
+  }
+  
+  .track-order-button:hover {
+    background: #0056b3;
+  }
+  
+
+  @media (min-width: 270px) and (max-width: 480px) {
+
+    .modal-content {
+      width: 90%;
+      height: auto;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .success-message {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  
+    .updates {
+      font-size: 1rem;
+      margin: 2% 0;
+    }
+  
+    .summary-item {
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+  
+    .summary-item.total {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  
+    .track-order-button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+      margin-top: 5%;
+    }
+  
+    .track-order-button:hover {
+      background: #004494;
+    }
+
+  }
+

@@ -1,0 +1,103 @@
+/* Fullscreen overlay */
+.login-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999; /* Ensure it appears on top */
+    animation: fadeIn 1.5s;
+}
+
+/* Centered form container */
+.login-popup-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px; /* Maximum width for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title section */
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-popup-title h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.login-popup-title img {
+    cursor: pointer;
+    width: 24px; /* Size of the close icon */
+    height: 24px;
+}
+
+/* Input fields */
+.login-popup-inputs input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+.login-popup-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #084078; /* Button background color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.login-popup-container button:hover {
+    background-color: #084078; /* Hover background color */
+}
+
+/* Terms and conditions */
+.login-popup-condition {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-popup-condition input {
+    margin-right: 10px;
+}
+
+.login-popup-condition p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Switch between Login and Sign Up */
+.login-popup-container p {
+    text-align: start;
+    font-size: 14px;
+}
+
+.login-popup-container p span {
+    color: #084078; /* Link color */
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
